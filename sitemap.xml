@@ -9,14 +9,14 @@
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/post/docker/</loc>
+    <loc>https://happyjiahui.github.io/tags/docker/</loc>
     <lastmod>2019-12-02T11:02:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/tags/git/</loc>
+    <loc>https://happyjiahui.github.io/post/docker/</loc>
     <lastmod>2019-12-02T11:02:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -46,6 +46,13 @@
   <url>
     <loc>https://happyjiahui.github.io/tags/</loc>
     <lastmod>2019-12-02T11:02:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://happyjiahui.github.io/tags/git/</loc>
+    <lastmod>2019-11-29T19:50:53+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
