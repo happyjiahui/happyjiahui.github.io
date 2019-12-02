@@ -12,17 +12,6 @@
     
     
     <item>
-      <title>About</title>
-      <link>https://happyjiahui.github.io/about/</link>
-      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
-      
-      <guid>https://happyjiahui.github.io/about/</guid>
-      <description>Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:
- Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
-    </item>
-    
-    <item>
       <title>代理配置</title>
       <link>https://happyjiahui.github.io/post/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 02 Dec 2019 11:42:45 +0800</pubDate>
