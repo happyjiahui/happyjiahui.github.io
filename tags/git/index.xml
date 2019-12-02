@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Happy JiaHui</title>
+    <link>https://happyjiahui.github.io/hugo_blog/tags/git/</link>
+    <description>Recent content in git on Happy JiaHui</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 29 Nov 2019 19:50:53 +0000</lastBuildDate>
+    
+	<atom:link href="https://happyjiahui.github.io/hugo_blog/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>git撤销commit</title>
+      <link>https://happyjiahui.github.io/hugo_blog/post/git%E6%92%A4%E9%94%80commit/</link>
+      <pubDate>Fri, 29 Nov 2019 19:50:53 +0000</pubDate>
+      
+      <guid>https://happyjiahui.github.io/hugo_blog/post/git%E6%92%A4%E9%94%80commit/</guid>
+      <description>写完代码后，我们一般这样 1 2 git add . //添加所有文件 git commit -m &amp;#34;本功能全部完成&amp;#34; 执行完commit后，想撤回commit，怎么办？</description>
+    </item>
+    
+    <item>
+      <title>git常用命令</title>
+      <link>https://happyjiahui.github.io/hugo_blog/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Fri, 29 Nov 2019 16:33:37 +0000</pubDate>
+      
+      <guid>https://happyjiahui.github.io/hugo_blog/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>暂存区文件的撤消 1 git reset HEAD ... 撤消文件修改 1 git checkout ... 添加子项目 1 git submodule add 地址 模块名称 删除子项目 1 git rm --cached path_to_submodule</description>
+    </item>
+    
+    <item>
+      <title>git设置</title>
+      <link>https://happyjiahui.github.io/hugo_blog/post/git%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Mon, 20 Feb 2017 19:13:37 +0000</pubDate>
+      
+      <guid>https://happyjiahui.github.io/hugo_blog/post/git%E8%AE%BE%E7%BD%AE/</guid>
+      <description>配置用户名和密码 1 2 git config --global user.name &amp;#34;用户名&amp;#34; git config --global user.email &amp;#34;邮箱&amp;#34; 配置编辑器 1 git config --global core.editor vim</description>
+    </item>
+    
+  </channel>
+</rss>

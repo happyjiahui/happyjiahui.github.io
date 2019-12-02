@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://happyjiahui.github.io/hugo_blog/sitemap.xml
