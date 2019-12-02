@@ -7,22 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>git | Happy JiaHui</title>
-    <meta property="og:title" content="git - Happy JiaHui">
+    <title>java | Happy JiaHui</title>
+    <meta property="og:title" content="java - Happy JiaHui">
     <meta property="og:type" content="article">
         
         
     <meta name="Keywords" content="java">
-    <meta name="description" content="git">
+    <meta name="description" content="java">
         
     <meta name="author" content="zhaojinbing">
-    <meta property="og:url" content="https://happyjiahui.github.io/tags/git/">
+    <meta property="og:url" content="https://happyjiahui.github.io/tags/java/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/normalize.css">
     
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="alternate" type="application/rss+xml+xml" href="https://happyjiahui.github.io/tags/git/index.xml" title="Happy JiaHui" />
+    <link rel="alternate" type="application/rss+xml+xml" href="https://happyjiahui.github.io/tags/java/index.xml" title="Happy JiaHui" />
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
@@ -67,7 +67,7 @@
                     
                     <h3 class="archive-title">
                         包含标签
-                        <span class="keyword">git</span>
+                        <span class="keyword">java</span>
                         的文章
                     </h3>
                     
@@ -76,64 +76,25 @@
                         <article class="post">
                             <header>
                                 <h1 class="post-title">
-                                    <a href="https://happyjiahui.github.io/post/git%E6%92%A4%E9%94%80commit/">git撤销commit</a>
+                                    <a href="https://happyjiahui.github.io/post/bean%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD/">Bean自动加载</a>
                                 </h1>
                             </header>
                             <date class="post-meta meta-date">
-                                2019年11月29日
+                                2019年12月2日
                             </date>
                             
                             <div class="post-content">
-                                写完代码后，我们一般这样
-git add . //添加所有文件 git commit -m &quot;本功能全部完成&quot;  执行完commit后，想撤回commit，怎么办？ 这样凉拌：
-git reset --soft HEAD^  这样就成功的撤销了你的commit 注意，仅仅是撤回commit操作，您写的代码仍然保留。
-说一下个人理解： HEAD^的意思是上一个版本，也可以写成HEAD~1
-如果你进行了2次commit，想都撤回，可以使用HEAD~2
-至于这几个参数：
- &ndash;mixed 不删除工作空间改动代码，撤销commit，并且撤销git add . 操作 这个为默认参数,git reset &ndash;mixed HEAD^ 和 git reset HEAD^ 效果是一样的。
- &ndash;soft 不删除工作空间改动代码，撤销commit，不撤销git add .
- &ndash;hard 删除工作空间改动代码，撤销commit，撤销git add . 注意完成这个操作后，就恢复到了上一次的commit状态。
-  顺便说一下，如果commit注释写错了，只是想改一下注释，只需要：
-git commit --amend  此时会进入默认vim编辑器，修改注释完毕后保存就好了。……
-                                <p class="readmore"><a href="https://happyjiahui.github.io/post/git%E6%92%A4%E9%94%80commit/">阅读全文</a></p>
-                            </div>
-                        </article>
-                    
-                        <article class="post">
-                            <header>
-                                <h1 class="post-title">
-                                    <a href="https://happyjiahui.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">git常用命令</a>
-                                </h1>
-                            </header>
-                            <date class="post-meta meta-date">
-                                2019年11月29日
-                            </date>
-                            
-                            <div class="post-content">
-                                 暂存区文件的撤消
-git reset HEAD ...  撤消文件修改
-git checkout ...  添加子项目
-git submodule add 地址 模块名称  删除子项目
-git rm --cached path_to_submodule   ……
-                                <p class="readmore"><a href="https://happyjiahui.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">阅读全文</a></p>
-                            </div>
-                        </article>
-                    
-                        <article class="post">
-                            <header>
-                                <h1 class="post-title">
-                                    <a href="https://happyjiahui.github.io/post/git%E8%AE%BE%E7%BD%AE/">git设置</a>
-                                </h1>
-                            </header>
-                            <date class="post-meta meta-date">
-                                2017年2月20日
-                            </date>
-                            
-                            <div class="post-content">
-                                 配置用户名和密码
-git config --global user.name &quot;用户名&quot; git config --global user.email &quot;邮箱&quot;  配置编辑器
-git config --global core.editor vim   ……
-                                <p class="readmore"><a href="https://happyjiahui.github.io/post/git%E8%AE%BE%E7%BD%AE/">阅读全文</a></p>
+                                通常来讲，要想实现上面的场景，建议是借助@Configuration注解的配置类来管理你自己的bean，这样对于其他使用方而言，只需要加载到你的配置类，就可以注册你的所有bean了。
+ 包路径扫描使用姿势
+首先是在你的工程中定义一个配置类，如下
+@Configuration @ComponentScan(&quot;com.git.hui.boot.autoconfig&quot;) public class SelfAutoConfig { }  这个配置类功能比较简单，指明扫描的包路径，然后这个配置类如何给使用方使用呢？ 将配置放在指定的文件中即可，使用者会自动加载，从而避免的代码的侵入。
+在资源目录下新建目录 META-INF，在 META-INF 目录下新建文件 spring.factories，在文件中添加
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.git.hui.boot.autoconfig.SelfAutoConfig  说明，如果需要换行时，可以如下
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\ com.git.hui.boot.autoconfig.SelfAutoConfig,` com.git.hui.boot.autoconfig.SelfAutoConfig2,`  然后使用方就可以愉快的使用你的bean了
+ 定义Bean使用方式 直接在Config配置中，定义Bean，可以说是更加常见的方式，特别是当你的bean不是那么多的时候，推荐使用这种方式，便于集中管理
+@Slf4j public class AutoConfBean { private String name; public AutoConfBean(String name) { this.name = name; log.info(&quot;AutoConfBean load time: {}&quot;, System.currentTimeMillis()); } public String getName() { return name; } }  对应的配置类
+@Configuration @ComponentScan(&quot;com.git.hui.boot.autoconfig&quot;) public class SelfAutoConfig { @Bean public AutoConfBean autoConfBean() { return new AutoConfBean(&quot;auto load + &quot; + System.……
+                                <p class="readmore"><a href="https://happyjiahui.github.io/post/bean%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD/">阅读全文</a></p>
                             </div>
                         </article>
                     

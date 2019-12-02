@@ -7,20 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Docker 常用命令 | Happy JiaHui</title>
-    <meta property="og:title" content="Docker 常用命令 - Happy JiaHui">
+    <title>Bean自动加载 | Happy JiaHui</title>
+    <meta property="og:title" content="Bean自动加载 - Happy JiaHui">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content="2019-12-02T11:02:40&#43;08:00">
+    <meta property="article:published_time" content="2019-12-02T17:25:35&#43;08:00">
         
         
-    <meta property="article:modified_time" content="2019-12-02T11:02:40&#43;08:00">
+    <meta property="article:modified_time" content="2019-12-02T17:25:35&#43;08:00">
         
     <meta name="Keywords" content="java">
-    <meta name="description" content="Docker 常用命令">
+    <meta name="description" content="Bean自动加载">
         
     <meta name="author" content="zhaojinbing">
-    <meta property="og:url" content="https://happyjiahui.github.io/post/docker/">
+    <meta property="og:url" content="https://happyjiahui.github.io/post/bean%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/normalize.css">
@@ -72,7 +72,7 @@
                 <div class="res-cons">
                     <article class="post">
                         <header>
-                            <h1 class="post-title">Docker 常用命令</h1>
+                            <h1 class="post-title">Bean自动加载</h1>
                         </header>
                         <date class="post-meta meta-date">
                             2019年12月2日
@@ -81,25 +81,67 @@
                         
                         
                         <div class="post-content">
-                            
+                            <p>通常来讲，要想实现上面的场景，建议是借助@Configuration注解的配置类来管理你自己的bean，这样对于其他使用方而言，只需要加载到你的配置类，就可以注册你的所有bean了。</p>
 
-<pre><code class="language-shell">sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+<ol>
+<li><p>包路径扫描使用姿势</p>
+
+<p>首先是在你的工程中定义一个配置类，如下</p>
+
+<pre><code class="language-java">@Configuration
+@ComponentScan(&quot;com.git.hui.boot.autoconfig&quot;)
+public class SelfAutoConfig {
+}
 </code></pre>
 
-<h2 id="列出容器">列出容器</h2>
+<p>这个配置类功能比较简单，指明扫描的包路径，然后这个配置类如何给使用方使用呢？
+将配置放在指定的文件中即可，使用者会自动加载，从而避免的代码的侵入。</p>
 
-<pre><code class="language-shell">docker ps -a
+<p>在资源目录下新建目录 META-INF，在 META-INF 目录下新建文件 spring.factories，在文件中添加</p>
+
+<pre><code class="language-ini">org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.git.hui.boot.autoconfig.SelfAutoConfig
 </code></pre>
 
-<h2 id="重启容器">重启容器</h2>
+<p>说明，如果需要换行时，可以如下</p>
 
-<pre><code class="language-shelll">sudo docker restart 容器id
+<pre><code class="language-ini">org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.git.hui.boot.autoconfig.SelfAutoConfig,`
+    com.git.hui.boot.autoconfig.SelfAutoConfig2,`
 </code></pre>
 
-<h2 id="进入bash">进入bash</h2>
+<p>然后使用方就可以愉快的使用你的bean了</p></li>
 
-<pre><code class="language-shell">docker exec -it 容器id /bin/sh
+<li><p>定义Bean使用方式
+直接在Config配置中，定义Bean，可以说是更加常见的方式，特别是当你的bean不是那么多的时候，推荐使用这种方式，便于集中管理</p>
+
+<pre><code class="language-java">@Slf4j
+public class AutoConfBean {
+    private String name;
+
+    public AutoConfBean(String name) {
+        this.name = name;
+        log.info(&quot;AutoConfBean load time: {}&quot;, System.currentTimeMillis());
+    }
+
+    public String getName() {
+        return name;
+    }
+}
 </code></pre>
+
+<p>对应的配置类</p>
+
+<pre><code class="language-java">@Configuration
+@ComponentScan(&quot;com.git.hui.boot.autoconfig&quot;)
+public class SelfAutoConfig {
+
+    @Bean
+    public AutoConfBean autoConfBean() {
+        return new AutoConfBean(&quot;auto load + &quot; + System.currentTimeMillis());
+    }
+}
+</code></pre></li>
+</ol>
 
                         </div>
 
@@ -112,15 +154,15 @@
     <h2>See Also</h2>
     <ul class="listing">
         
+        <li><a href="/post/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/">代理配置</a></li>
+        
+        <li><a href="/post/docker/">Docker 常用命令</a></li>
+        
         <li><a href="/post/git%E6%92%A4%E9%94%80commit/">git撤销commit</a></li>
-        
-        <li><a href="/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">git常用命令</a></li>
-        
-        <li><a href="/post/git%E8%AE%BE%E7%BD%AE/">git设置</a></li>
         
         <li><a href="/post/kafka%E8%A7%A3%E5%86%B3message_too_larger%E9%94%99%E8%AF%AF/">kafka解决message too larger 错误</a></li>
         
-        <li><a href="/archives/">归档</a></li>
+        <li><a href="/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">git常用命令</a></li>
         
     </ul>
 </div>
@@ -130,9 +172,9 @@
                             
                             <ul class="clearfix">
                                 
-                                <li><a href="https://happyjiahui.github.io/tags/docker">docker</a></li>
+                                <li><a href="https://happyjiahui.github.io/tags/java">java</a></li>
                                 
-                                <li><a href="https://happyjiahui.github.io/tags/linux">linux</a></li>
+                                <li><a href="https://happyjiahui.github.io/tags/spring">spring</a></li>
                                 
                             </ul>
                             
