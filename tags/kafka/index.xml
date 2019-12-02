@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kafka on Happy JiaHui</title>
-    <link>https://happyjiahui.github.io/hugo_blog/tags/kafka/</link>
+    <link>https://happyjiahui.github.io/tags/kafka/</link>
     <description>Recent content in kafka on Happy JiaHui</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 29 Nov 2019 19:07:23 +0000</lastBuildDate>
     
-	<atom:link href="https://happyjiahui.github.io/hugo_blog/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://happyjiahui.github.io/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>kafka解决message too larger 错误</title>
-      <link>https://happyjiahui.github.io/hugo_blog/post/kafka%E8%A7%A3%E5%86%B3message_too_larger%E9%94%99%E8%AF%AF/</link>
+      <link>https://happyjiahui.github.io/post/kafka%E8%A7%A3%E5%86%B3message_too_larger%E9%94%99%E8%AF%AF/</link>
       <pubDate>Fri, 29 Nov 2019 19:07:23 +0000</pubDate>
       
-      <guid>https://happyjiahui.github.io/hugo_blog/post/kafka%E8%A7%A3%E5%86%B3message_too_larger%E9%94%99%E8%AF%AF/</guid>
+      <guid>https://happyjiahui.github.io/post/kafka%E8%A7%A3%E5%86%B3message_too_larger%E9%94%99%E8%AF%AF/</guid>
       <description>1 2 3 4 5 6 #broker能接收消息的最大字节数 message.max.bytes=200000000 #broker可复制的消息的最大字节数 replica.fetch.max.bytes=204857600 #消费者端的可读取的最大消息 fetch.message.max.bytes=204857600</description>
     </item>
     
