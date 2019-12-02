@@ -9,6 +9,41 @@
   </url>
   
   <url>
+    <loc>https://happyjiahui.github.io/</loc>
+    <lastmod>2019-12-02T11:42:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://happyjiahui.github.io/post/</loc>
+    <lastmod>2019-12-02T11:42:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://happyjiahui.github.io/tags/</loc>
+    <lastmod>2019-12-02T11:42:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://happyjiahui.github.io/tags/%E4%BB%A3%E7%90%86/</loc>
+    <lastmod>2019-12-02T11:42:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://happyjiahui.github.io/post/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2019-12-02T11:42:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://happyjiahui.github.io/tags/docker/</loc>
     <lastmod>2019-12-02T11:02:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -23,28 +58,7 @@
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/</loc>
-    <lastmod>2019-12-02T11:02:40+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://happyjiahui.github.io/tags/linux/</loc>
-    <lastmod>2019-12-02T11:02:40+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://happyjiahui.github.io/post/</loc>
-    <lastmod>2019-12-02T11:02:40+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://happyjiahui.github.io/tags/</loc>
     <lastmod>2019-12-02T11:02:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
