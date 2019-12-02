@@ -2,22 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>代理 on Happy JiaHui</title>
-    <link>https://happyjiahui.github.io/tags/%E4%BB%A3%E7%90%86/</link>
+    <link>http://www.flysnow.org/tags/%E4%BB%A3%E7%90%86/</link>
     <description>Recent content in 代理 on Happy JiaHui</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 02 Dec 2019 11:42:45 +0800</lastBuildDate>
     
-	<atom:link href="https://happyjiahui.github.io/tags/%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.flysnow.org/tags/%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>代理配置</title>
-      <link>https://happyjiahui.github.io/post/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</link>
+      <link>http://www.flysnow.org/post/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Mon, 02 Dec 2019 11:42:45 +0800</pubDate>
       
-      <guid>https://happyjiahui.github.io/post/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</guid>
-      <description>ssr订阅地址 https://blueseaclub.org/ gfwlist地址 https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt</description>
+      <guid>http://www.flysnow.org/post/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</guid>
+      <description>ssr订阅地址 https://blueseaclub.org/
+gfwlist地址 https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt</description>
     </item>
     
   </channel>

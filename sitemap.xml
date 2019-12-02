@@ -1,115 +1,84 @@
-<?xml-stylesheet type="text/xsl" href="https://happyjiahui.github.io/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://happyjiahui.github.io/about/</loc>
+    <loc>http://www.flysnow.org/about/</loc>
     <lastmod>2017-08-28T21:41:52+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/</loc>
+    <loc>http://www.flysnow.org/</loc>
     <lastmod>2019-12-02T11:42:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/post/</loc>
+    <loc>http://www.flysnow.org/post/</loc>
     <lastmod>2019-12-02T11:42:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/tags/</loc>
+    <loc>http://www.flysnow.org/tags/</loc>
     <lastmod>2019-12-02T11:42:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/tags/%E4%BB%A3%E7%90%86/</loc>
+    <loc>http://www.flysnow.org/tags/%E4%BB%A3%E7%90%86/</loc>
     <lastmod>2019-12-02T11:42:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/post/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</loc>
+    <loc>http://www.flysnow.org/post/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2019-12-02T11:42:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/tags/docker/</loc>
+    <loc>http://www.flysnow.org/tags/docker/</loc>
     <lastmod>2019-12-02T11:02:40+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/post/docker/</loc>
+    <loc>http://www.flysnow.org/post/docker/</loc>
     <lastmod>2019-12-02T11:02:40+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/tags/linux/</loc>
+    <loc>http://www.flysnow.org/tags/linux/</loc>
     <lastmod>2019-12-02T11:02:40+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/tags/git/</loc>
+    <loc>http://www.flysnow.org/tags/git/</loc>
     <lastmod>2019-11-29T19:50:53+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/post/git%E6%92%A4%E9%94%80commit/</loc>
+    <loc>http://www.flysnow.org/post/git%E6%92%A4%E9%94%80commit/</loc>
     <lastmod>2019-11-29T19:50:53+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/tags/kafka/</loc>
+    <loc>http://www.flysnow.org/tags/kafka/</loc>
     <lastmod>2019-11-29T19:07:23+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/post/kafka%E8%A7%A3%E5%86%B3message_too_larger%E9%94%99%E8%AF%AF/</loc>
+    <loc>http://www.flysnow.org/post/kafka%E8%A7%A3%E5%86%B3message_too_larger%E9%94%99%E8%AF%AF/</loc>
     <lastmod>2019-11-29T19:07:23+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <loc>http://www.flysnow.org/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2019-11-29T16:33:37+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/post/git%E8%AE%BE%E7%BD%AE/</loc>
+    <loc>http://www.flysnow.org/post/git%E8%AE%BE%E7%BD%AE/</loc>
     <lastmod>2017-02-20T19:13:37+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://happyjiahui.github.io/categories/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <loc>http://www.flysnow.org/categories/</loc>
   </url>
   
 </urlset>

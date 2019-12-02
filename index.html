@@ -1,280 +1,314 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Happy JiaHui</title>
-  <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.59.1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+    <title>Happy JiaHui | 快乐人生 分享技术</title>
+    <meta property="og:title" content="Happy JiaHui | 快乐人生 分享技术">
+    <meta property="og:type" content="website">
+    <meta name="Keywords" content="java">
+    <meta name="description" content="专注于Java、项目管理、软件架构">
+    <meta property="og:url" content="http://www.flysnow.org/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-
-<meta name="author" content="zhaojinbing" /><meta name="description" content="快乐人生 分享技术." /><meta name="keywords" content="Hugo, theme, even" />
-
-
-
-
-
-
-<meta name="generator" content="Hugo 0.59.1 with theme even" />
-
-
-<link rel="canonical" href="https://happyjiahui.github.io/" />
-  <link href="https://happyjiahui.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Happy JiaHui" />
-  <link href="https://happyjiahui.github.io/index.xml" rel="feed" type="application/rss+xml" title="Happy JiaHui" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-
-
-<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
-
-
-<meta property="og:title" content="Happy JiaHui" />
-<meta property="og:description" content="快乐人生 分享技术." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://happyjiahui.github.io/" />
-
-<meta property="og:updated_time" content="2019-12-02T11:42:45+08:00" />
-<meta itemprop="name" content="Happy JiaHui">
-<meta itemprop="description" content="快乐人生 分享技术.">
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Happy JiaHui"/>
-<meta name="twitter:description" content="快乐人生 分享技术."/>
-
-<!--[if lte IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
-<![endif]-->
-
-<!--[if lt IE 9]>
-  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-<![endif]-->
-
-</head>
-<body>
-  <div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/" class="logo">Happy JiaHui</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">Home</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">Archives</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">Tags</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">Categories</li>
-      </a><a href="/about/">
-        <li class="mobile-menu-item">About</li>
-      </a>
-  </ul>
-</nav>
-  <div class="container" id="mobile-panel">
-    <header id="header" class="header">
-        <div class="logo-wrapper">
-  <a href="/" class="logo">Happy JiaHui</a>
-</div>
-
-<nav class="site-navbar">
-  <ul id="menu" class="menu">
-    <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">Archives</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">Tags</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">Categories</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">About</a>
-      </li>
-  </ul>
-</nav>
-    </header>
-
-    <main id="main" class="main">
-      <div class="content-wrapper">
-        <div id="content" class="content">
-          <section id="posts" class="posts">
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/">代理配置</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-12-02 </span>
-      
-        <span class="more-meta">  </span>
-        <span class="more-meta">  </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      ssr订阅地址 https://blueseaclub.org/ gfwlist地址 https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
-    </div>
-    <div class="read-more">
-      <a href="/post/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/" class="read-more-link"></a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/docker/">Docker 常用命令</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-12-02 </span>
-      
-        <span class="more-meta">  </span>
-        <span class="more-meta">  </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      1 sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer 列出容器 1 docker ps -a 重启容器 1 sudo docker restart 容器id 进入bash 1 docker exec -it 容器id /bin/sh
-    </div>
-    <div class="read-more">
-      <a href="/post/docker/" class="read-more-link"></a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/git%E6%92%A4%E9%94%80commit/">git撤销commit</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-11-29 </span>
-      
-        <span class="more-meta">  </span>
-        <span class="more-meta">  </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      写完代码后，我们一般这样 1 2 git add . //添加所有文件 git commit -m &#34;本功能全部完成&#34; 执行完commit后，想撤回commit，怎么办？
-    </div>
-    <div class="read-more">
-      <a href="/post/git%E6%92%A4%E9%94%80commit/" class="read-more-link"></a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/kafka%E8%A7%A3%E5%86%B3message_too_larger%E9%94%99%E8%AF%AF/">kafka解决message too larger 错误</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-11-29 </span>
-      
-        <span class="more-meta">  </span>
-        <span class="more-meta">  </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      1 2 3 4 5 6 #broker能接收消息的最大字节数 message.max.bytes=200000000 #broker可复制的消息的最大字节数 replica.fetch.max.bytes=204857600 #消费者端的可读取的最大消息 fetch.message.max.bytes=204857600
-    </div>
-    <div class="read-more">
-      <a href="/post/kafka%E8%A7%A3%E5%86%B3message_too_larger%E9%94%99%E8%AF%AF/" class="read-more-link"></a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">git常用命令</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2019-11-29 </span>
-      
-        <span class="more-meta">  </span>
-        <span class="more-meta">  </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      暂存区文件的撤消 1 git reset HEAD ... 撤消文件修改 1 git checkout ... 添加子项目 1 git submodule add 地址 模块名称 删除子项目 1 git rm --cached path_to_submodule
-    </div>
-    <div class="read-more">
-      <a href="/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="read-more-link"></a>
-    </div>
-  </div>
-</article>
-
-    </section>
-  
-  <nav class="pagination">
+    <link rel="stylesheet" href="/css/normalize.css">
     
-    <a class="next" href="/page/2/">
-        <span class="next-text"></span>
-        <i class="iconfont icon-right"></i>
-      </a>
-  </nav>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="alternate" type="application/rss+xml+xml" href="http://www.flysnow.org/index.xml" title="Happy JiaHui" />
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+
+<body>
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <h1>
+                        <a id="logo" href="http://www.flysnow.org">
+                            Happy JiaHui
+                        </a>
+                    </h1>
+                
+                <p class="description">快乐人生 分享技术</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="http://www.flysnow.org">首页</a>
+                    
+                    <a  href="http://www.flysnow.org/about/" title="About">About</a>
+                    
+                </nav>
+            </div>
         </div>
-        
-
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="social-links">
-  <a href="https://happyjiahui.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
-
-<div class="copyright">
-  <span class="power-by">
-    %!(EXTRA string=<a class="hexo-link" href="https://gohugo.io">Hugo</a>)
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-     - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-
-  
-
-  <span class="copyright-year">
-    &copy; 
-    2017 - 
-    2019
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">zhaojinbing</span>
-  </span>
-</div>
-    </footer>
-
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont icon-up"></i>
     </div>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+</header>
 
+
+<div id="body">
+    <div class="container">
+        <div class="col-group">
+
+            <div class="col-8" id="main">
+                <div class="res-cons">
+                    
+		    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="http://www.flysnow.org/about/" title="About" >About</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2017年8月20日
+                            </date>
+                            
+                            <div class="post-content">
+                                Hugo is a static site engine written in Go.
+It makes use of a variety of open source projects including:
+ Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.……
+                            </div>
+                            <p class="readmore"><a href="http://www.flysnow.org/about/">阅读全文</a></p>
+                        </article>
+                    
+                    
+		    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="http://www.flysnow.org/post/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/" title="代理配置" >代理配置</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年12月2日
+                            </date>
+                            
+                            <div class="post-content">
+                                ssr订阅地址 https://blueseaclub.org/
+gfwlist地址 https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt……
+                            </div>
+                            <p class="readmore"><a href="http://www.flysnow.org/post/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/">阅读全文</a></p>
+                        </article>
+                    
+                    
+		    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="http://www.flysnow.org/post/docker/" title="Docker 常用命令" >Docker 常用命令</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年12月2日
+                            </date>
+                            
+                            <div class="post-content">
+                                 sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer  列出容器 docker ps -a  重启容器 sudo docker restart 容器id  进入bash docker exec -it 容器id /bin/sh  ……
+                            </div>
+                            <p class="readmore"><a href="http://www.flysnow.org/post/docker/">阅读全文</a></p>
+                        </article>
+                    
+                    
+		    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="http://www.flysnow.org/post/git%E6%92%A4%E9%94%80commit/" title="git撤销commit" >git撤销commit</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年11月29日
+                            </date>
+                            
+                            <div class="post-content">
+                                写完代码后，我们一般这样
+git add . //添加所有文件 git commit -m &quot;本功能全部完成&quot;  执行完commit后，想撤回commit，怎么办？ 这样凉拌：
+git reset --soft HEAD^  这样就成功的撤销了你的commit 注意，仅仅是撤回commit操作，您写的代码仍然保留。
+说一下个人理解： HEAD^的意思是上一个版本，也可以写成HEAD~1
+如果你进行了2次commit，想都撤回，可以使用HEAD~2
+至于这几个参数：
+ &ndash;mixed 不删除工作空间改动代码，撤销commit，并且撤销git add . 操作 这个为默认参数,git reset &ndash;mixed HEAD^ 和 git reset HEAD^ 效果是一样的。
+ &ndash;soft 不删除工作空间改动代码，撤销commit，不撤销git add .
+ &ndash;hard 删除工作空间改动代码，撤销commit，撤销git add . 注意完成这个操作后，就恢复到了上一次的commit状态。
+  顺便说一下，如果commit注释写错了，只是想改一下注释，只需要：
+git commit --amend  此时会进入默认vim编辑器，修改注释完毕后保存就好了。……
+                            </div>
+                            <p class="readmore"><a href="http://www.flysnow.org/post/git%E6%92%A4%E9%94%80commit/">阅读全文</a></p>
+                        </article>
+                    
+                    
+		    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="http://www.flysnow.org/post/kafka%E8%A7%A3%E5%86%B3message_too_larger%E9%94%99%E8%AF%AF/" title="kafka解决message too larger 错误" >kafka解决message too larger 错误</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年11月29日
+                            </date>
+                            
+                            <div class="post-content">
+                                #broker能接收消息的最大字节数 message.max.bytes=200000000 #broker可复制的消息的最大字节数 replica.fetch.max.bytes=204857600 #消费者端的可读取的最大消息 fetch.message.max.bytes=204857600  ……
+                            </div>
+                            <p class="readmore"><a href="http://www.flysnow.org/post/kafka%E8%A7%A3%E5%86%B3message_too_larger%E9%94%99%E8%AF%AF/">阅读全文</a></p>
+                        </article>
+                    
+                    
+		    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="http://www.flysnow.org/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="git常用命令" >git常用命令</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年11月29日
+                            </date>
+                            
+                            <div class="post-content">
+                                 暂存区文件的撤消
+git reset HEAD ...  撤消文件修改
+git checkout ...  添加子项目
+git submodule add 地址 模块名称  删除子项目
+git rm --cached path_to_submodule   ……
+                            </div>
+                            <p class="readmore"><a href="http://www.flysnow.org/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">阅读全文</a></p>
+                        </article>
+                    
+                    
+		    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
+                                    <a href="http://www.flysnow.org/post/git%E8%AE%BE%E7%BD%AE/" title="git设置" >git设置</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2017年2月20日
+                            </date>
+                            
+                            <div class="post-content">
+                                 配置用户名和密码
+git config --global user.name &quot;用户名&quot; git config --global user.email &quot;邮箱&quot;  配置编辑器
+git config --global core.editor vim   ……
+                            </div>
+                            <p class="readmore"><a href="http://www.flysnow.org/post/git%E8%AE%BE%E7%BD%AE/">阅读全文</a></p>
+                        </article>
+                    
+                    
+                    
+
+
+
+
+
+                </div>
+            </div>
+
+            <div id="secondary">
+    <section class="widget">
+        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://www.flysnow.org">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://www.flysnow.org/post/%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE/" title="代理配置">代理配置</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/docker/" title="Docker 常用命令">Docker 常用命令</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/git%E6%92%A4%E9%94%80commit/" title="git撤销commit">git撤销commit</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/kafka%E8%A7%A3%E5%86%B3message_too_larger%E9%94%99%E8%AF%AF/" title="kafka解决message too larger 错误">kafka解决message too larger 错误</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="git常用命令">git常用命令</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/git%E8%AE%BE%E7%BD%AE/" title="git设置">git设置</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="http://www.flysnow.org/tags/docker/">docker</a>
+    
+    <a href="http://www.flysnow.org/tags/git/">git</a>
+    
+    <a href="http://www.flysnow.org/tags/kafka/">kafka</a>
+    
+    <a href="http://www.flysnow.org/tags/linux/">linux</a>
+    
+    <a href="http://www.flysnow.org/tags/%E4%BB%A3%E7%90%86/">代理</a>
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://www.flysnow.org/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container">
+        &copy; 2019 <a href="http://www.flysnow.org">Happy JiaHui By zhaojinbing</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
 
 
 
