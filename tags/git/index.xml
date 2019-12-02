@@ -6,10 +6,19 @@
     <description>Recent content in git on Happy JiaHui</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 29 Nov 2019 19:50:53 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Dec 2019 11:02:40 +0800</lastBuildDate>
     
 	<atom:link href="https://happyjiahui.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker 常用命令</title>
+      <link>https://happyjiahui.github.io/post/docker/</link>
+      <pubDate>Mon, 02 Dec 2019 11:02:40 +0800</pubDate>
+      
+      <guid>https://happyjiahui.github.io/post/docker/</guid>
+      <description>1 sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer 列出容器 1 docker ps -a 重启容器 1 sudo docker restart 容器id 进入bash 1 docker exec -it 容器id /bin/sh</description>
+    </item>
     
     <item>
       <title>git撤销commit</title>

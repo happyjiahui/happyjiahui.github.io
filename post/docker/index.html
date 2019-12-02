@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>git撤销commit - Happy JiaHui</title>
+  <title>Docker 常用命令 - Happy JiaHui</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="zhaojinbing" /><meta name="description" content="写完代码后，我们一般这样 1 2 git add . //添加所有文件 git commit -m &amp;#34;本功能全部完成&amp;#34; 执行完commit后，想撤回commit，怎么办？" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="zhaojinbing" /><meta name="description" content="1 sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer 列出容器 1 docker ps -a 重启容器 1 sudo docker restart 容器id 进入bash 1 docker exec -it 容器id /bin/sh" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.59.1 with theme even" />
 
 
-<link rel="canonical" href="https://happyjiahui.github.io/post/git%E6%92%A4%E9%94%80commit/" />
+<link rel="canonical" href="https://happyjiahui.github.io/post/docker/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -38,26 +38,26 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="git撤销commit" />
-<meta property="og:description" content="写完代码后，我们一般这样 1 2 git add . //添加所有文件 git commit -m &#34;本功能全部完成&#34; 执行完commit后，想撤回commit，怎么办？" />
+<meta property="og:title" content="Docker 常用命令" />
+<meta property="og:description" content="1 sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer 列出容器 1 docker ps -a 重启容器 1 sudo docker restart 容器id 进入bash 1 docker exec -it 容器id /bin/sh" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://happyjiahui.github.io/post/git%E6%92%A4%E9%94%80commit/" />
-<meta property="article:published_time" content="2019-11-29T19:50:53+00:00" />
-<meta property="article:modified_time" content="2019-11-29T19:50:53+00:00" />
-<meta itemprop="name" content="git撤销commit">
-<meta itemprop="description" content="写完代码后，我们一般这样 1 2 git add . //添加所有文件 git commit -m &#34;本功能全部完成&#34; 执行完commit后，想撤回commit，怎么办？">
+<meta property="og:url" content="https://happyjiahui.github.io/post/docker/" />
+<meta property="article:published_time" content="2019-12-02T11:02:40+08:00" />
+<meta property="article:modified_time" content="2019-12-02T11:02:40+08:00" />
+<meta itemprop="name" content="Docker 常用命令">
+<meta itemprop="description" content="1 sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer 列出容器 1 docker ps -a 重启容器 1 sudo docker restart 容器id 进入bash 1 docker exec -it 容器id /bin/sh">
 
 
-<meta itemprop="datePublished" content="2019-11-29T19:50:53&#43;00:00" />
-<meta itemprop="dateModified" content="2019-11-29T19:50:53&#43;00:00" />
-<meta itemprop="wordCount" content="404">
+<meta itemprop="datePublished" content="2019-12-02T11:02:40&#43;08:00" />
+<meta itemprop="dateModified" content="2019-12-02T11:02:40&#43;08:00" />
+<meta itemprop="wordCount" content="53">
 
 
 
 <meta itemprop="keywords" content="git,linux," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="git撤销commit"/>
-<meta name="twitter:description" content="写完代码后，我们一般这样 1 2 git add . //添加所有文件 git commit -m &#34;本功能全部完成&#34; 执行完commit后，想撤回commit，怎么办？"/>
+<meta name="twitter:title" content="Docker 常用命令"/>
+<meta name="twitter:description" content="1 sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer 列出容器 1 docker ps -a 重启容器 1 sudo docker restart 容器id 进入bash 1 docker exec -it 容器id /bin/sh"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -124,10 +124,10 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">git撤销commit</h1>
+      <h1 class="post-title">Docker 常用命令</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2019-11-29 </span>
+        <span class="post-time"> 2019-12-02 </span>
         
           <span class="more-meta">  </span>
           <span class="more-meta">  </span>
@@ -138,65 +138,56 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title"></h2>
   <div class="post-toc-content always-active">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#列出容器">列出容器</a></li>
+<li><a href="#重启容器">重启容器</a></li>
+<li><a href="#进入bash">进入bash</a></li>
+</ul></li>
+</ul>
+</nav>
   </div>
 </div>
     <div class="post-content">
-      <p>写完代码后，我们一般这样</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">git add . //添加所有文件
-git commit -m <span class="s2">&#34;本功能全部完成&#34;</span></code></pre></td></tr></table>
-</div>
-</div>
-<p>执行完commit后，想撤回commit，怎么办？
-这样凉拌：</p>
+      
+
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">git reset --soft HEAD^</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-shell" data-lang="shell">sudo docker run -d -p <span class="m">9000</span>:9000 -p <span class="m">8000</span>:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer</code></pre></td></tr></table>
 </div>
 </div>
-<p>这样就成功的撤销了你的commit
-注意，仅仅是撤回commit操作，您写的代码仍然保留。</p>
-
-<p>说一下个人理解：
-HEAD^的意思是上一个版本，也可以写成HEAD~1</p>
-
-<p>如果你进行了2次commit，想都撤回，可以使用HEAD~2</p>
-
-<p>至于这几个参数：</p>
-
-<ul>
-<li><p>&ndash;mixed
-不删除工作空间改动代码，撤销commit，并且撤销git add . 操作
-这个为默认参数,git reset &ndash;mixed HEAD^ 和 git reset HEAD^ 效果是一样的。</p></li>
-
-<li><p>&ndash;soft
-不删除工作空间改动代码，撤销commit，不撤销git add .</p></li>
-
-<li><p>&ndash;hard
-删除工作空间改动代码，撤销commit，撤销git add .
-注意完成这个操作后，就恢复到了上一次的commit状态。</p></li>
-</ul>
-
-<p>顺便说一下，如果commit注释写错了，只是想改一下注释，只需要：</p>
+<h2 id="列出容器">列出容器</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">git commit --amend</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-shell" data-lang="shell">docker ps -a</code></pre></td></tr></table>
 </div>
 </div>
-<p>此时会进入默认vim编辑器，修改注释完毕后保存就好了。</p>
-
+<h2 id="重启容器">重启容器</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shelll" data-lang="shelll"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shelll" data-lang="shelll">sudo docker restart 容器id</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="进入bash">进入bash</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">docker <span class="nb">exec</span> -it 容器id /bin/sh</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
@@ -206,13 +197,9 @@ HEAD^的意思是上一个版本，也可以写成HEAD~1</p>
           <a href="/tags/linux/">linux</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/docker/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Docker 常用命令</span>
-            <span class="prev-text nav-mobile"></span>
-          </a>
-        <a class="next" href="/post/kafka%E8%A7%A3%E5%86%B3message_too_larger%E9%94%99%E8%AF%AF/">
-            <span class="next-text nav-default">kafka解决message too larger 错误</span>
+        
+        <a class="next" href="/post/git%E6%92%A4%E9%94%80commit/">
+            <span class="next-text nav-default">git撤销commit</span>
             <span class="next-text nav-mobile"></span>
             <i class="iconfont icon-right"></i>
           </a>
