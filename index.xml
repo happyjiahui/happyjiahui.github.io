@@ -93,5 +93,14 @@ git config --global user.name &amp;quot;用户名&amp;quot; git config --global 
 git config --global core.editor vim   </description>
     </item>
     
+    <item>
+      <title>归档</title>
+      <link>https://happyjiahui.github.io/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://happyjiahui.github.io/archives/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
