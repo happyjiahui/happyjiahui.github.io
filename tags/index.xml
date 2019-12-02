@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Happy JiaHui</title>
-    <link>http://www.flysnow.org/tags/</link>
+    <link>https://happyjiahui.github.io/tags/</link>
     <description>Recent content in Tags on Happy JiaHui</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 02 Dec 2019 11:42:45 +0800</lastBuildDate>
     
-	<atom:link href="http://www.flysnow.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://happyjiahui.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>代理</title>
-      <link>http://www.flysnow.org/tags/%E4%BB%A3%E7%90%86/</link>
+      <link>https://happyjiahui.github.io/tags/%E4%BB%A3%E7%90%86/</link>
       <pubDate>Mon, 02 Dec 2019 11:42:45 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/tags/%E4%BB%A3%E7%90%86/</guid>
+      <guid>https://happyjiahui.github.io/tags/%E4%BB%A3%E7%90%86/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>http://www.flysnow.org/tags/docker/</link>
+      <link>https://happyjiahui.github.io/tags/docker/</link>
       <pubDate>Mon, 02 Dec 2019 11:02:40 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/tags/docker/</guid>
+      <guid>https://happyjiahui.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linux</title>
-      <link>http://www.flysnow.org/tags/linux/</link>
+      <link>https://happyjiahui.github.io/tags/linux/</link>
       <pubDate>Mon, 02 Dec 2019 11:02:40 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/tags/linux/</guid>
+      <guid>https://happyjiahui.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>http://www.flysnow.org/tags/git/</link>
+      <link>https://happyjiahui.github.io/tags/git/</link>
       <pubDate>Fri, 29 Nov 2019 19:50:53 +0000</pubDate>
       
-      <guid>http://www.flysnow.org/tags/git/</guid>
+      <guid>https://happyjiahui.github.io/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kafka</title>
-      <link>http://www.flysnow.org/tags/kafka/</link>
+      <link>https://happyjiahui.github.io/tags/kafka/</link>
       <pubDate>Fri, 29 Nov 2019 19:07:23 +0000</pubDate>
       
-      <guid>http://www.flysnow.org/tags/kafka/</guid>
+      <guid>https://happyjiahui.github.io/tags/kafka/</guid>
       <description></description>
     </item>
     

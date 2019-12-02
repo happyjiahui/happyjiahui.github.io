@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on Happy JiaHui</title>
-    <link>http://www.flysnow.org/tags/git/</link>
+    <link>https://happyjiahui.github.io/tags/git/</link>
     <description>Recent content in git on Happy JiaHui</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 29 Nov 2019 19:50:53 +0000</lastBuildDate>
     
-	<atom:link href="http://www.flysnow.org/tags/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://happyjiahui.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>git撤销commit</title>
-      <link>http://www.flysnow.org/post/git%E6%92%A4%E9%94%80commit/</link>
+      <link>https://happyjiahui.github.io/post/git%E6%92%A4%E9%94%80commit/</link>
       <pubDate>Fri, 29 Nov 2019 19:50:53 +0000</pubDate>
       
-      <guid>http://www.flysnow.org/post/git%E6%92%A4%E9%94%80commit/</guid>
+      <guid>https://happyjiahui.github.io/post/git%E6%92%A4%E9%94%80commit/</guid>
       <description>写完代码后，我们一般这样
 git add . //添加所有文件 git commit -m &amp;quot;本功能全部完成&amp;quot;  执行完commit后，想撤回commit，怎么办？ 这样凉拌：
 git reset --soft HEAD^  这样就成功的撤销了你的commit 注意，仅仅是撤回commit操作，您写的代码仍然保留。
@@ -32,10 +32,10 @@ git commit --amend  此时会进入默认vim编辑器，修改注释完毕后保
     
     <item>
       <title>git常用命令</title>
-      <link>http://www.flysnow.org/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <link>https://happyjiahui.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Fri, 29 Nov 2019 16:33:37 +0000</pubDate>
       
-      <guid>http://www.flysnow.org/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <guid>https://happyjiahui.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
       <description> 暂存区文件的撤消
 git reset HEAD ...  撤消文件修改
 git checkout ...  添加子项目
@@ -45,10 +45,10 @@ git rm --cached path_to_submodule   </description>
     
     <item>
       <title>git设置</title>
-      <link>http://www.flysnow.org/post/git%E8%AE%BE%E7%BD%AE/</link>
+      <link>https://happyjiahui.github.io/post/git%E8%AE%BE%E7%BD%AE/</link>
       <pubDate>Mon, 20 Feb 2017 19:13:37 +0000</pubDate>
       
-      <guid>http://www.flysnow.org/post/git%E8%AE%BE%E7%BD%AE/</guid>
+      <guid>https://happyjiahui.github.io/post/git%E8%AE%BE%E7%BD%AE/</guid>
       <description> 配置用户名和密码
 git config --global user.name &amp;quot;用户名&amp;quot; git config --global user.email &amp;quot;邮箱&amp;quot;  配置编辑器
 git config --global core.editor vim   </description>
