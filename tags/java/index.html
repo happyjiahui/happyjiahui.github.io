@@ -76,6 +76,23 @@
                         <article class="post">
                             <header>
                                 <h1 class="post-title">
+                                    <a href="https://happyjiahui.github.io/post/%E8%AE%BE%E7%BD%AEspring%E6%97%A5%E5%BF%97%E7%BC%96%E7%A0%81%E4%B8%BAutf8/">设置spring日志编码为UTF8</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2019年12月4日
+                            </date>
+                            
+                            <div class="post-content">
+                                在resources中新增logback-spring.xml
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;configuration scan=&quot;true&quot;&gt; &lt;!-- use Spring default values --&gt; &lt;include resource=&quot;org/springframework/boot/logging/logback/defaults.xml&quot;/&gt; &lt;appender name=&quot;CONSOLE&quot; class=&quot;ch.qos.logback.core.ConsoleAppender&quot;&gt; &lt;encoder&gt; &lt;pattern&gt;${CONSOLE_LOG_PATTERN}&lt;/pattern&gt; &lt;charset&gt;utf8&lt;/charset&gt; &lt;/encoder&gt; &lt;/appender&gt; … &lt;/configuration&gt;  ……
+                                <p class="readmore"><a href="https://happyjiahui.github.io/post/%E8%AE%BE%E7%BD%AEspring%E6%97%A5%E5%BF%97%E7%BC%96%E7%A0%81%E4%B8%BAutf8/">阅读全文</a></p>
+                            </div>
+                        </article>
+                    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
                                     <a href="https://happyjiahui.github.io/post/bean%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD/">Bean自动加载</a>
                                 </h1>
                             </header>
@@ -121,6 +138,10 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\ com.git.hui.boo
     <section class="widget">
         <h3 class="widget-title">最近文章</h3>
 <ul class="widget-list">
+    
+    <li>
+        <a href="https://happyjiahui.github.io/post/%E8%AE%BE%E7%BD%AEspring%E6%97%A5%E5%BF%97%E7%BC%96%E7%A0%81%E4%B8%BAutf8/" title="设置spring日志编码为UTF8">设置spring日志编码为UTF8</a>
+    </li>
     
     <li>
         <a href="https://happyjiahui.github.io/post/bean%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD/" title="Bean自动加载">Bean自动加载</a>

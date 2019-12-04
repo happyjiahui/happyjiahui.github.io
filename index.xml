@@ -6,10 +6,20 @@
     <description>Recent content on Happy JiaHui</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 02 Dec 2019 17:25:35 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 04 Dec 2019 10:31:25 +0800</lastBuildDate>
     
 	<atom:link href="https://happyjiahui.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>设置spring日志编码为UTF8</title>
+      <link>https://happyjiahui.github.io/post/%E8%AE%BE%E7%BD%AEspring%E6%97%A5%E5%BF%97%E7%BC%96%E7%A0%81%E4%B8%BAutf8/</link>
+      <pubDate>Wed, 04 Dec 2019 10:31:25 +0800</pubDate>
+      
+      <guid>https://happyjiahui.github.io/post/%E8%AE%BE%E7%BD%AEspring%E6%97%A5%E5%BF%97%E7%BC%96%E7%A0%81%E4%B8%BAutf8/</guid>
+      <description>在resources中新增logback-spring.xml
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;configuration scan=&amp;quot;true&amp;quot;&amp;gt; &amp;lt;!-- use Spring default values --&amp;gt; &amp;lt;include resource=&amp;quot;org/springframework/boot/logging/logback/defaults.xml&amp;quot;/&amp;gt; &amp;lt;appender name=&amp;quot;CONSOLE&amp;quot; class=&amp;quot;ch.qos.logback.core.ConsoleAppender&amp;quot;&amp;gt; &amp;lt;encoder&amp;gt; &amp;lt;pattern&amp;gt;${CONSOLE_LOG_PATTERN}&amp;lt;/pattern&amp;gt; &amp;lt;charset&amp;gt;utf8&amp;lt;/charset&amp;gt; &amp;lt;/encoder&amp;gt; &amp;lt;/appender&amp;gt; … &amp;lt;/configuration&amp;gt;  </description>
+    </item>
     
     <item>
       <title>Bean自动加载</title>
