@@ -67,6 +67,29 @@
                         <article class="post">
                             <header>
                                 <h1 class="post-title">
+                                    <a href="https://happyjiahui.github.io/post/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="机器学习笔记" >机器学习笔记</a>
+                                </h1>
+                            </header>
+                            <date class="post-meta meta-date">
+                                2020年1月10日
+                            </date>
+                            
+                            <div class="post-content">
+                                  LabelEncoder
+LabelEncoder是用来对分类型特征值进行编码，即对不连续的数值或文本进行编码。其中包含以下常用方法：
+ fit(y) ：fit可看做一本空字典，y可看作要塞到字典中的词 fit_transform(y)：相当于先进行fit再进行transform，即把y塞到字典中去以后再进行transform得到索引值 inverse_transform(y)：根据索引值y获得原始数据 transform(y) ：将y转变成索引值    OneHotEncoder
+有一些特征并不是以连续值的形式给出。例如：人的性别 [“male”, “female”]，来自的国家 [“from Europe”, “from US”, “from Asia”]，使用的浏览器[“uses Firefox”, “uses Chrome”, “uses Safari”, “uses Internet Explorer”]。这种特征可以采用整数的形式进行编码，如： [“male”, “from US”, “uses Internet Explorer”] 可表示成 [0, 1, 3] ，[“female”, “from Asia”, “uses Chrome”] 可表示成[1, 2, 1]。 但是，这些整数形式的表示不能直接作为某些机器学习算法输入，因为有些机器学习算法是需要连续型的输入数据，同一列数据之间数值的大小可代表差异程度。如： [0, 1, 3]与[0,1,0]的特征差异比[0, 1, 3]与[0,1,2]之间的差异要大，但事实上它们的差异是一样的，都是浏览器使用不一样。
+一个解决办法就是采用OneHotEncoder，这种表示方式将每一个分类特征变量的m个可能的取值转变成m个二值特征，对于每一条数据这m个值中仅有一个特征值为1，其他的都为0。
+  ……
+                            </div>
+                            <p class="readmore"><a href="https://happyjiahui.github.io/post/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">阅读全文</a></p>
+                        </article>
+                    
+                    
+		    
+                        <article class="post">
+                            <header>
+                                <h1 class="post-title">
                                     <a href="https://happyjiahui.github.io/post/%E8%AE%BE%E7%BD%AEspring%E6%97%A5%E5%BF%97%E7%BC%96%E7%A0%81%E4%B8%BAutf8/" title="设置spring日志编码为UTF8" >设置spring日志编码为UTF8</a>
                                 </h1>
                             </header>
@@ -270,6 +293,10 @@ git commit --amend 此时会进入默认vim编辑器，修改注释完毕后保�
 <ul class="widget-list">
     
     <li>
+        <a href="https://happyjiahui.github.io/post/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="机器学习笔记">机器学习笔记</a>
+    </li>
+    
+    <li>
         <a href="https://happyjiahui.github.io/post/%E8%AE%BE%E7%BD%AEspring%E6%97%A5%E5%BF%97%E7%BC%96%E7%A0%81%E4%B8%BAutf8/" title="设置spring日志编码为UTF8">设置spring日志编码为UTF8</a>
     </li>
     
@@ -330,6 +357,8 @@ git commit --amend 此时会进入默认vim编辑器，修改注释完毕后保�
     <a href="https://happyjiahui.github.io/tags/spring/">spring</a>
     
     <a href="https://happyjiahui.github.io/tags/%E4%BB%A3%E7%90%86/">代理</a>
+    
+    <a href="https://happyjiahui.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">机器学习</a>
     
 </div>
     </section>
