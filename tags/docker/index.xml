@@ -17,7 +17,7 @@
       <pubDate>Mon, 02 Dec 2019 11:02:40 +0800</pubDate>
       
       <guid>https://happyjiahui.github.io/post/docker/</guid>
-      <description> sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer  列出容器 docker ps -a  重启容器 sudo docker restart 容器id  进入bash docker exec -it 容器id /bin/sh  </description>
+      <description>sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer 列出容器 docker ps -a 重启容器 sudo docker restart 容器id 进入bash docker exec -it 容器id /bin/sh </description>
     </item>
     
   </channel>

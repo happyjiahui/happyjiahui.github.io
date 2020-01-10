@@ -18,7 +18,7 @@
       
       <guid>https://happyjiahui.github.io/post/%E8%AE%BE%E7%BD%AEspring%E6%97%A5%E5%BF%97%E7%BC%96%E7%A0%81%E4%B8%BAutf8/</guid>
       <description>在resources中新增logback-spring.xml
-&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt; &amp;lt;configuration scan=&amp;quot;true&amp;quot;&amp;gt; &amp;lt;!-- use Spring default values --&amp;gt; &amp;lt;include resource=&amp;quot;org/springframework/boot/logging/logback/defaults.xml&amp;quot;/&amp;gt; &amp;lt;appender name=&amp;quot;CONSOLE&amp;quot; class=&amp;quot;ch.qos.logback.core.ConsoleAppender&amp;quot;&amp;gt; &amp;lt;encoder&amp;gt; &amp;lt;pattern&amp;gt;${CONSOLE_LOG_PATTERN}&amp;lt;/pattern&amp;gt; &amp;lt;charset&amp;gt;utf8&amp;lt;/charset&amp;gt; &amp;lt;/encoder&amp;gt; &amp;lt;/appender&amp;gt; … &amp;lt;/configuration&amp;gt;  </description>
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt; &amp;lt;configuration scan=&amp;#34;true&amp;#34;&amp;gt; &amp;lt;!--use Spring default values --&amp;gt; &amp;lt;include resource=&amp;#34;org/springframework/boot/logging/logback/defaults.xml&amp;#34;/&amp;gt; &amp;lt;appender name=&amp;#34;CONSOLE&amp;#34; class=&amp;#34;ch.qos.logback.core.ConsoleAppender&amp;#34;&amp;gt; &amp;lt;encoder&amp;gt; &amp;lt;pattern&amp;gt;${CONSOLE_LOG_PATTERN}&amp;lt;/pattern&amp;gt; &amp;lt;charset&amp;gt;utf8&amp;lt;/charset&amp;gt; &amp;lt;/encoder&amp;gt; &amp;lt;/appender&amp;gt; … &amp;lt;/configuration&amp;gt; </description>
     </item>
     
     <item>
@@ -28,15 +28,15 @@
       
       <guid>https://happyjiahui.github.io/post/bean%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD/</guid>
       <description>通常来讲，要想实现上面的场景，建议是借助@Configuration注解的配置类来管理你自己的bean，这样对于其他使用方而言，只需要加载到你的配置类，就可以注册你的所有bean了。
- 包路径扫描使用姿势
+  包路径扫描使用姿势
 首先是在你的工程中定义一个配置类，如下
-@Configuration @ComponentScan(&amp;quot;com.git.hui.boot.autoconfig&amp;quot;) public class SelfAutoConfig { }  这个配置类功能比较简单，指明扫描的包路径，然后这个配置类如何给使用方使用呢？ 将配置放在指定的文件中即可，使用者会自动加载，从而避免的代码的侵入。
+@Configuration @ComponentScan(&amp;#34;com.git.hui.boot.autoconfig&amp;#34;) public class SelfAutoConfig { } 这个配置类功能比较简单，指明扫描的包路径，然后这个配置类如何给使用方使用呢？ 将配置放在指定的文件中即可，使用者会自动加载，从而避免的代码的侵入。
 在资源目录下新建目录 META-INF，在 META-INF 目录下新建文件 spring.factories，在文件中添加
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.git.hui.boot.autoconfig.SelfAutoConfig  说明，如果需要换行时，可以如下
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\ com.git.hui.boot.autoconfig.SelfAutoConfig,` com.git.hui.boot.autoconfig.SelfAutoConfig2,`  然后使用方就可以愉快的使用你的bean了
- 定义Bean使用方式 直接在Config配置中，定义Bean，可以说是更加常见的方式，特别是当你的bean不是那么多的时候，推荐使用这种方式，便于集中管理
-@Slf4j public class AutoConfBean { private String name; public AutoConfBean(String name) { this.name = name; log.info(&amp;quot;AutoConfBean load time: {}&amp;quot;, System.currentTimeMillis()); } public String getName() { return name; } }  对应的配置类
-@Configuration @ComponentScan(&amp;quot;com.git.hui.boot.autoconfig&amp;quot;) public class SelfAutoConfig { @Bean public AutoConfBean autoConfBean() { return new AutoConfBean(&amp;quot;auto load + &amp;quot; + System.</description>
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.git.hui.boot.autoconfig.SelfAutoConfig 说明，如果需要换行时，可以如下
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\ com.git.hui.boot.autoconfig.SelfAutoConfig,` com.git.hui.boot.autoconfig.SelfAutoConfig2,` 然后使用方就可以愉快的使用你的bean了
+  定义Bean使用方式 直接在Config配置中，定义Bean，可以说是更加常见的方式，特别是当你的bean不是那么多的时候，推荐使用这种方式，便于集中管理
+@Slf4j public class AutoConfBean { private String name; public AutoConfBean(String name) { this.name = name; log.info(&amp;#34;AutoConfBean load time: {}&amp;#34;, System.currentTimeMillis()); } public String getName() { return name; } } 对应的配置类
+@Configuration @ComponentScan(&amp;#34;com.git.hui.boot.autoconfig&amp;#34;) public class SelfAutoConfig { @Bean public AutoConfBean autoConfBean() { return new AutoConfBean(&amp;#34;auto load + &amp;#34; + System.</description>
     </item>
     
     <item>
@@ -55,7 +55,7 @@ gfwlist地址 https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.t
       <pubDate>Mon, 02 Dec 2019 11:02:40 +0800</pubDate>
       
       <guid>https://happyjiahui.github.io/post/docker/</guid>
-      <description> sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer  列出容器 docker ps -a  重启容器 sudo docker restart 容器id  进入bash docker exec -it 容器id /bin/sh  </description>
+      <description>sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer 列出容器 docker ps -a 重启容器 sudo docker restart 容器id 进入bash docker exec -it 容器id /bin/sh </description>
     </item>
     
     <item>
@@ -65,16 +65,16 @@ gfwlist地址 https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.t
       
       <guid>https://happyjiahui.github.io/post/git%E6%92%A4%E9%94%80commit/</guid>
       <description>写完代码后，我们一般这样
-git add . //添加所有文件 git commit -m &amp;quot;本功能全部完成&amp;quot;  执行完commit后，想撤回commit，怎么办？ 这样凉拌：
-git reset --soft HEAD^  这样就成功的撤销了你的commit 注意，仅仅是撤回commit操作，您写的代码仍然保留。
+git add . //添加所有文件 git commit -m &amp;#34;本功能全部完成&amp;#34; 执行完commit后，想撤回commit，怎么办？ 这样凉拌：
+git reset --soft HEAD^ 这样就成功的撤销了你的commit 注意，仅仅是撤回commit操作，您写的代码仍然保留。
 说一下个人理解： HEAD^的意思是上一个版本，也可以写成HEAD~1
 如果你进行了2次commit，想都撤回，可以使用HEAD~2
 至于这几个参数：
- &amp;ndash;mixed 不删除工作空间改动代码，撤销commit，并且撤销git add . 操作 这个为默认参数,git reset &amp;ndash;mixed HEAD^ 和 git reset HEAD^ 效果是一样的。
- &amp;ndash;soft 不删除工作空间改动代码，撤销commit，不撤销git add .
- &amp;ndash;hard 删除工作空间改动代码，撤销commit，撤销git add . 注意完成这个操作后，就恢复到了上一次的commit状态。
+  &amp;ndash;mixed 不删除工作空间改动代码，撤销commit，并且撤销git add . 操作 这个为默认参数,git reset &amp;ndash;mixed HEAD^ 和 git reset HEAD^ 效果是一样的。
+  &amp;ndash;soft 不删除工作空间改动代码，撤销commit，不撤销git add .
+  &amp;ndash;hard 删除工作空间改动代码，撤销commit，撤销git add . 注意完成这个操作后，就恢复到了上一次的commit状态。
   顺便说一下，如果commit注释写错了，只是想改一下注释，只需要：
-git commit --amend  此时会进入默认vim编辑器，修改注释完毕后保存就好了。</description>
+git commit --amend 此时会进入默认vim编辑器，修改注释完毕后保存就好了。</description>
     </item>
     
     <item>
@@ -83,7 +83,7 @@ git commit --amend  此时会进入默认vim编辑器，修改注释完毕后保
       <pubDate>Fri, 29 Nov 2019 19:07:23 +0000</pubDate>
       
       <guid>https://happyjiahui.github.io/post/kafka%E8%A7%A3%E5%86%B3message_too_larger%E9%94%99%E8%AF%AF/</guid>
-      <description>#broker能接收消息的最大字节数 message.max.bytes=200000000 #broker可复制的消息的最大字节数 replica.fetch.max.bytes=204857600 #消费者端的可读取的最大消息 fetch.message.max.bytes=204857600  </description>
+      <description>#broker能接收消息的最大字节数 message.max.bytes=200000000 #broker可复制的消息的最大字节数 replica.fetch.max.bytes=204857600 #消费者端的可读取的最大消息 fetch.message.max.bytes=204857600 </description>
     </item>
     
     <item>
@@ -92,11 +92,7 @@ git commit --amend  此时会进入默认vim编辑器，修改注释完毕后保
       <pubDate>Fri, 29 Nov 2019 16:33:37 +0000</pubDate>
       
       <guid>https://happyjiahui.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description> 暂存区文件的撤消
-git reset HEAD ...  撤消文件修改
-git checkout ...  添加子项目
-git submodule add 地址 模块名称  删除子项目
-git rm --cached path_to_submodule   </description>
+      <description> 暂存区文件的撤消  git reset HEAD ...  撤消文件修改  git checkout ...  添加子项目  git submodule add 地址 模块名称  删除子项目  git rm --cached path_to_submodule </description>
     </item>
     
     <item>
@@ -105,9 +101,7 @@ git rm --cached path_to_submodule   </description>
       <pubDate>Mon, 20 Feb 2017 19:13:37 +0000</pubDate>
       
       <guid>https://happyjiahui.github.io/post/git%E8%AE%BE%E7%BD%AE/</guid>
-      <description> 配置用户名和密码
-git config --global user.name &amp;quot;用户名&amp;quot; git config --global user.email &amp;quot;邮箱&amp;quot;  配置编辑器
-git config --global core.editor vim   </description>
+      <description> 配置用户名和密码  git config --global user.name &amp;#34;用户名&amp;#34; git config --global user.email &amp;#34;邮箱&amp;#34;  配置编辑器  git config --global core.editor vim </description>
     </item>
     
   </channel>

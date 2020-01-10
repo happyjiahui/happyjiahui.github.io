@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -81,26 +81,14 @@
                         
                         
                         <div class="post-content">
-                            
-
-<pre><code class="language-shell">sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
-</code></pre>
-
-<h2 id="列出容器">列出容器</h2>
-
-<pre><code class="language-shell">docker ps -a
-</code></pre>
-
-<h2 id="重启容器">重启容器</h2>
-
-<pre><code class="language-shelll">sudo docker restart 容器id
-</code></pre>
-
-<h2 id="进入bash">进入bash</h2>
-
-<pre><code class="language-shell">docker exec -it 容器id /bin/sh
-</code></pre>
-
+                            <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+</code></pre></div><h2 id="heading">列出容器</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker ps -a
+</code></pre></div><h2 id="heading-1">重启容器</h2>
+<pre><code class="language-shelll" data-lang="shelll">sudo docker restart 容器id
+</code></pre><h2 id="bash">进入bash</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker exec -it 容器id /bin/sh
+</code></pre></div>
                         </div>
 
                         
@@ -238,7 +226,7 @@
 </div>
 <footer id="footer">
     <div class="container">
-        &copy; 2019 <a href="https://happyjiahui.github.io/">Happy JiaHui By zhaojinbing</a>.
+        &copy; 2020 <a href="https://happyjiahui.github.io/">Happy JiaHui By zhaojinbing</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
         

@@ -17,7 +17,7 @@
       <pubDate>Mon, 02 Dec 2019 11:02:40 +0800</pubDate>
       
       <guid>https://happyjiahui.github.io/post/docker/</guid>
-      <description> sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer  列出容器 docker ps -a  重启容器 sudo docker restart 容器id  进入bash docker exec -it 容器id /bin/sh  </description>
+      <description>sudo docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer 列出容器 docker ps -a 重启容器 sudo docker restart 容器id 进入bash docker exec -it 容器id /bin/sh </description>
     </item>
     
     <item>
@@ -27,16 +27,16 @@
       
       <guid>https://happyjiahui.github.io/post/git%E6%92%A4%E9%94%80commit/</guid>
       <description>写完代码后，我们一般这样
-git add . //添加所有文件 git commit -m &amp;quot;本功能全部完成&amp;quot;  执行完commit后，想撤回commit，怎么办？ 这样凉拌：
-git reset --soft HEAD^  这样就成功的撤销了你的commit 注意，仅仅是撤回commit操作，您写的代码仍然保留。
+git add . //添加所有文件 git commit -m &amp;#34;本功能全部完成&amp;#34; 执行完commit后，想撤回commit，怎么办？ 这样凉拌：
+git reset --soft HEAD^ 这样就成功的撤销了你的commit 注意，仅仅是撤回commit操作，您写的代码仍然保留。
 说一下个人理解： HEAD^的意思是上一个版本，也可以写成HEAD~1
 如果你进行了2次commit，想都撤回，可以使用HEAD~2
 至于这几个参数：
- &amp;ndash;mixed 不删除工作空间改动代码，撤销commit，并且撤销git add . 操作 这个为默认参数,git reset &amp;ndash;mixed HEAD^ 和 git reset HEAD^ 效果是一样的。
- &amp;ndash;soft 不删除工作空间改动代码，撤销commit，不撤销git add .
- &amp;ndash;hard 删除工作空间改动代码，撤销commit，撤销git add . 注意完成这个操作后，就恢复到了上一次的commit状态。
+  &amp;ndash;mixed 不删除工作空间改动代码，撤销commit，并且撤销git add . 操作 这个为默认参数,git reset &amp;ndash;mixed HEAD^ 和 git reset HEAD^ 效果是一样的。
+  &amp;ndash;soft 不删除工作空间改动代码，撤销commit，不撤销git add .
+  &amp;ndash;hard 删除工作空间改动代码，撤销commit，撤销git add . 注意完成这个操作后，就恢复到了上一次的commit状态。
   顺便说一下，如果commit注释写错了，只是想改一下注释，只需要：
-git commit --amend  此时会进入默认vim编辑器，修改注释完毕后保存就好了。</description>
+git commit --amend 此时会进入默认vim编辑器，修改注释完毕后保存就好了。</description>
     </item>
     
     <item>
@@ -45,11 +45,7 @@ git commit --amend  此时会进入默认vim编辑器，修改注释完毕后保
       <pubDate>Fri, 29 Nov 2019 16:33:37 +0000</pubDate>
       
       <guid>https://happyjiahui.github.io/post/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-      <description> 暂存区文件的撤消
-git reset HEAD ...  撤消文件修改
-git checkout ...  添加子项目
-git submodule add 地址 模块名称  删除子项目
-git rm --cached path_to_submodule   </description>
+      <description> 暂存区文件的撤消  git reset HEAD ...  撤消文件修改  git checkout ...  添加子项目  git submodule add 地址 模块名称  删除子项目  git rm --cached path_to_submodule </description>
     </item>
     
     <item>
@@ -58,9 +54,7 @@ git rm --cached path_to_submodule   </description>
       <pubDate>Mon, 20 Feb 2017 19:13:37 +0000</pubDate>
       
       <guid>https://happyjiahui.github.io/post/git%E8%AE%BE%E7%BD%AE/</guid>
-      <description> 配置用户名和密码
-git config --global user.name &amp;quot;用户名&amp;quot; git config --global user.email &amp;quot;邮箱&amp;quot;  配置编辑器
-git config --global core.editor vim   </description>
+      <description> 配置用户名和密码  git config --global user.name &amp;#34;用户名&amp;#34; git config --global user.email &amp;#34;邮箱&amp;#34;  配置编辑器  git config --global core.editor vim </description>
     </item>
     
   </channel>

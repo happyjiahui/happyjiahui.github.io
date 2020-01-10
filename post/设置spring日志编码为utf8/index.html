@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -82,22 +82,20 @@
                         
                         <div class="post-content">
                             <p>在resources中新增logback-spring.xml</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+<span style="color:#f92672">&lt;configuration</span> <span style="color:#a6e22e">scan=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">&gt;</span>
+    <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> use Spring default values </span><span style="color:#75715e">--&gt;</span>
+    <span style="color:#f92672">&lt;include</span> <span style="color:#a6e22e">resource=</span><span style="color:#e6db74">&#34;org/springframework/boot/logging/logback/defaults.xml&#34;</span><span style="color:#f92672">/&gt;</span>
 
-<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;configuration scan=&quot;true&quot;&gt;
-    &lt;!-- use Spring default values --&gt;
-    &lt;include resource=&quot;org/springframework/boot/logging/logback/defaults.xml&quot;/&gt;
-
-    &lt;appender name=&quot;CONSOLE&quot; class=&quot;ch.qos.logback.core.ConsoleAppender&quot;&gt;
-        &lt;encoder&gt;
-            &lt;pattern&gt;${CONSOLE_LOG_PATTERN}&lt;/pattern&gt;
-            &lt;charset&gt;utf8&lt;/charset&gt;
-        &lt;/encoder&gt;
-    &lt;/appender&gt;
+    <span style="color:#f92672">&lt;appender</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;CONSOLE&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;ch.qos.logback.core.ConsoleAppender&#34;</span><span style="color:#f92672">&gt;</span>
+        <span style="color:#f92672">&lt;encoder</span><span style="color:#f92672">&gt;</span>
+            <span style="color:#f92672">&lt;pattern</span><span style="color:#f92672">&gt;</span>${CONSOLE_LOG_PATTERN}<span style="color:#f92672">&lt;/pattern&gt;</span>
+            <span style="color:#f92672">&lt;charset</span><span style="color:#f92672">&gt;</span>utf8<span style="color:#f92672">&lt;/charset&gt;</span>
+        <span style="color:#f92672">&lt;/encoder&gt;</span>
+    <span style="color:#f92672">&lt;/appender&gt;</span>
     …
-&lt;/configuration&gt;
-</code></pre>
-
+<span style="color:#f92672">&lt;/configuration&gt;</span>
+</code></pre></div>
                         </div>
 
                         
@@ -235,7 +233,7 @@
 </div>
 <footer id="footer">
     <div class="container">
-        &copy; 2019 <a href="https://happyjiahui.github.io/">Happy JiaHui By zhaojinbing</a>.
+        &copy; 2020 <a href="https://happyjiahui.github.io/">Happy JiaHui By zhaojinbing</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
         

@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.62.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -85,7 +85,7 @@
                             
                             <div class="post-content">
                                 在resources中新增logback-spring.xml
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt; &lt;configuration scan=&quot;true&quot;&gt; &lt;!-- use Spring default values --&gt; &lt;include resource=&quot;org/springframework/boot/logging/logback/defaults.xml&quot;/&gt; &lt;appender name=&quot;CONSOLE&quot; class=&quot;ch.qos.logback.core.ConsoleAppender&quot;&gt; &lt;encoder&gt; &lt;pattern&gt;${CONSOLE_LOG_PATTERN}&lt;/pattern&gt; &lt;charset&gt;utf8&lt;/charset&gt; &lt;/encoder&gt; &lt;/appender&gt; … &lt;/configuration&gt;  ……
+&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;configuration scan=&#34;true&#34;&gt; &lt;!--use Spring default values --&gt; &lt;include resource=&#34;org/springframework/boot/logging/logback/defaults.xml&#34;/&gt; &lt;appender name=&#34;CONSOLE&#34; class=&#34;ch.qos.logback.core.ConsoleAppender&#34;&gt; &lt;encoder&gt; &lt;pattern&gt;${CONSOLE_LOG_PATTERN}&lt;/pattern&gt; &lt;charset&gt;utf8&lt;/charset&gt; &lt;/encoder&gt; &lt;/appender&gt; … &lt;/configuration&gt; ……
                                 <p class="readmore"><a href="https://happyjiahui.github.io/post/%E8%AE%BE%E7%BD%AEspring%E6%97%A5%E5%BF%97%E7%BC%96%E7%A0%81%E4%B8%BAutf8/">阅读全文</a></p>
                             </div>
                         </article>
@@ -102,15 +102,15 @@
                             
                             <div class="post-content">
                                 通常来讲，要想实现上面的场景，建议是借助@Configuration注解的配置类来管理你自己的bean，这样对于其他使用方而言，只需要加载到你的配置类，就可以注册你的所有bean了。
- 包路径扫描使用姿势
+  包路径扫描使用姿势
 首先是在你的工程中定义一个配置类，如下
-@Configuration @ComponentScan(&quot;com.git.hui.boot.autoconfig&quot;) public class SelfAutoConfig { }  这个配置类功能比较简单，指明扫描的包路径，然后这个配置类如何给使用方使用呢？ 将配置放在指定的文件中即可，使用者会自动加载，从而避免的代码的侵入。
+@Configuration @ComponentScan(&#34;com.git.hui.boot.autoconfig&#34;) public class SelfAutoConfig { } 这个配置类功能比较简单，指明扫描的包路径，然后这个配置类如何给使用方使用呢？ 将配置放在指定的文件中即可，使用者会自动加载，从而避免的代码的侵入。
 在资源目录下新建目录 META-INF，在 META-INF 目录下新建文件 spring.factories，在文件中添加
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.git.hui.boot.autoconfig.SelfAutoConfig  说明，如果需要换行时，可以如下
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\ com.git.hui.boot.autoconfig.SelfAutoConfig,` com.git.hui.boot.autoconfig.SelfAutoConfig2,`  然后使用方就可以愉快的使用你的bean了
- 定义Bean使用方式 直接在Config配置中，定义Bean，可以说是更加常见的方式，特别是当你的bean不是那么多的时候，推荐使用这种方式，便于集中管理
-@Slf4j public class AutoConfBean { private String name; public AutoConfBean(String name) { this.name = name; log.info(&quot;AutoConfBean load time: {}&quot;, System.currentTimeMillis()); } public String getName() { return name; } }  对应的配置类
-@Configuration @ComponentScan(&quot;com.git.hui.boot.autoconfig&quot;) public class SelfAutoConfig { @Bean public AutoConfBean autoConfBean() { return new AutoConfBean(&quot;auto load + &quot; + System.……
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.git.hui.boot.autoconfig.SelfAutoConfig 说明，如果需要换行时，可以如下
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\ com.git.hui.boot.autoconfig.SelfAutoConfig,` com.git.hui.boot.autoconfig.SelfAutoConfig2,` 然后使用方就可以愉快的使用你的bean了
+  定义Bean使用方式 直接在Config配置中，定义Bean，可以说是更加常见的方式，特别是当你的bean不是那么多的时候，推荐使用这种方式，便于集中管理
+@Slf4j public class AutoConfBean { private String name; public AutoConfBean(String name) { this.name = name; log.info(&#34;AutoConfBean load time: {}&#34;, System.currentTimeMillis()); } public String getName() { return name; } } 对应的配置类
+@Configuration @ComponentScan(&#34;com.git.hui.boot.autoconfig&#34;) public class SelfAutoConfig { @Bean public AutoConfBean autoConfBean() { return new AutoConfBean(&#34;auto load + &#34; + System.……
                                 <p class="readmore"><a href="https://happyjiahui.github.io/post/bean%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD/">阅读全文</a></p>
                             </div>
                         </article>
@@ -218,7 +218,7 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\ com.git.hui.boo
 </div>
 <footer id="footer">
     <div class="container">
-        &copy; 2019 <a href="https://happyjiahui.github.io/">Happy JiaHui By zhaojinbing</a>.
+        &copy; 2020 <a href="https://happyjiahui.github.io/">Happy JiaHui By zhaojinbing</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
         
